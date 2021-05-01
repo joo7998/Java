@@ -54,7 +54,7 @@ public class Types {
 	
 	// 논리형 자료 예제
 	private static void booleanEx() {
-		boolean b2 = true; 
+		boolean b1 = true; 
 		boolean b2 = false;
 		
 		System.out.println("b1 - > " + b1);
@@ -69,18 +69,13 @@ public class Types {
 		System.out.println("7 > 5 ? " + result);
 	}
 	
-	
-	private static void booleanEx() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	//실수형 예
     private static void floatTypes() {
 	     float floatVar = 3.12345F;
-	     double doublerVar = 3.12345;
+	     double doubleVar = 3.12345;
 	     
-	     System.out/println("floatVar:" + floatVar);
+	     System.out.println("floatVar:" + floatVar);
 	     System.out.println("doubleVar:" + doubleVar);
 	     
 	     
