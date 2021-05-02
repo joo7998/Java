@@ -102,7 +102,7 @@ public class Types {
     	
         System.out.println(intVar1);
         long longVar1;
-        long longvar2;
+        long longVar2;
         
         longVar1 = 2021;
         longVar2 = 12345678901234L;  //L 혹은 l - long임을 알려
@@ -119,6 +119,8 @@ public class Types {
         System.out.println("072 - >" + oct);
         System.out.println("0xFF - >");
 
+}
+	
 }
 
 
