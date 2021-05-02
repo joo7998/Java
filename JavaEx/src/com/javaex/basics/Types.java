@@ -14,10 +14,14 @@ public class Types {
 	// 상수 예제
 	// 이유 1.변경되면 아되는 값을 보호할 떄 
 	// 이유 2. 코드 가독성이 높아진다
-	
-	
+
+	private static void integerTypes() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	private static void constantEx() {
-		float PI = 3.14159F
+		float PI = 3.14159F;
 		final int SPEED_LIMIT = 110;   // 상수 생성 - final
 		
 		System.out.println("PI" + PI);
@@ -32,9 +36,9 @@ public class Types {
 		
 		SPEED_LIMIT = 80;  // 고의로든 실수로든 변경되는 안되면 : 상수로 
 		
-		boolean overspeed = speed > SPEED_LIMIT; 
+		boolean overspeed1 = speed > SPEED_LIMIT; 
 				
-		System.out.println("과속 ? " + overspeed); 
+		System.out.println("과속 ? " + overspeed1); 
 	}
 	
 	// char형 자료 예제 - 내부에 문자에 해당하는 부호 없는 정수 코드 저장(2byte)
@@ -86,17 +90,11 @@ public class Types {
 	     
 	     //주의 : float, double - 정밀도 포기 표혀 범위 넓 - 오차 
 	     System.out.println(0.1 * 3);
-	     
-		
-	}
+    }
 
     //정수형 예
-	private static void integerTypes() {
-		// TODO Auto-generated method stub
-		
-	}
 
-	private static void main(integerTypes() {
+	private static void main(integerTypes()) {
     	int intVar1;
     	int intVar2;
     	intVar1 = 2021;
@@ -119,8 +117,8 @@ public class Types {
         
         System.out.println("ob1101 - >" + bin);
         System.out.println("072 - >" + oct);
-        System.out.println("0xFF - >")
-    }
+        System.out.println("0xFF - >");
+
 }
 
 
