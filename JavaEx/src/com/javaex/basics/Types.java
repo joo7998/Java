@@ -94,11 +94,11 @@ public class Types {
 
     //정수형 예
 
-	private static void main(integerTypes()) {
+	private static void main() {
     	int intVar1;
     	int intVar2;
     	intVar1 = 2021;
-    	intVar2 = 12345678901234;
+    	intVar2 = 1234501234;
     	
         System.out.println(intVar1);
         long longVar1;
