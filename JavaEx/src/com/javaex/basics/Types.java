@@ -1,6 +1,7 @@
 package com.javaex.basics;
 
 // 기본 타입 예
+// this is also test
 
 public class Types {
 	
