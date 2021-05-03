@@ -46,7 +46,7 @@ public class OperEx {
 		//Infinity 가 포함 연산식 = 항상 Infinity
 		System.out.println("7.0 / 0 은 유한수인가? " + Double.isFinite(7.0/0));
 	  
-		System.out.println("0.0 / 0.0 ? " + (0,0 / 0.0));  // Not A Number
+		System.out.println("0.0 / 0.0 ? " + (0.0 / 0.0));  // Not A Number
 		// NaN = 연산 불
 		System.out.println("0.0 / 0.0 is NaN ? " + Double.isNaN(0.0 / 0.0));
 		System.out.println(0.0 / 0.0 + 10);
