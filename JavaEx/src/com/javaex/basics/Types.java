@@ -12,8 +12,63 @@ public class Types {
 		floatTypes();
 		booleanEx();	
 		charEx();
+		ConstantEx();
+		implicitCasting();
+		explicitCasting();
 	}
 	
+	// 명시적변환 
+	// 표현의 범위 넓 -> 좁 으로 변환
+	// 개발자가 명시적으로 변환 해야 
+	private static void explicitCasting() {
+		byte b; 
+		int i = 2021;
+		float f = 123.456F;
+		
+		b = (byte)i;
+		System.out.println("int" + i + " -> byte " + b );
+		
+		i = (int)f;
+		System.out.println("float " + f + " -> int " + i); 
+		
+		
+		
+	}
+
+	
+	
+	
+	// 암묵적 변환 
+	// 표현의 범위 좁은 자료형 -> 넓은 자료형으로 변환
+	// 명시적으로 변환하지 않아도 자바가 변환
+	
+
+	
+	private static void implicitCasting() {
+		byte b = 10;
+		System.out.println("byte" + b);
+		int i = b;
+		System.out.println("int" + i);
+		long l = i;
+		System.out.println("long" + l);
+		// 자료의 유실 없
+		float f = l;
+	   System.out.println("long -> float:" + f);
+	   double d = f;
+	   System.out.println("float -> double:" + d); 
+		
+	}
+
+
+
+
+
+	private static void ConstantEx() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
 	// 상수 예제
 	// 이유 1.변경되면 아되는 값을 보호할 떄 
 	// 이유 2. 코드 가독성이 높아진다
@@ -25,7 +80,7 @@ public class Types {
 
 	private static void constantEx() {
 		float PI = 3.14159F;
-		final int SPEED_LIMIT = 110;   // 상수 생성 - final
+		final int SPEED_LIMIT = 110;   // 상수(constant) 생성 - final
 		
 		System.out.println("PI" + PI);
 		System.out.println("SPEED_LIMIT:" + SPEED_LIMIT);
@@ -125,6 +180,7 @@ public class Types {
 }
 	
 }
+
 
 
 
