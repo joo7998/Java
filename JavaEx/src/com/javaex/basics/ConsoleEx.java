@@ -1,7 +1,7 @@
 package com.javaex.basics;
 
 public class ConsoleEx {
-
+	
 import java.util.Scanner; //java.util package의 Scanner class 로드	
 	
 	public static void main(String[] args) {
@@ -52,7 +52,4 @@ import java.util.Scanner; //java.util package의 Scanner class 로드
         System.err.println("표준 에러 출력!");
 		
 	}
-	
-	
-	
 }
