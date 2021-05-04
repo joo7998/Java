@@ -8,47 +8,69 @@ public class LoopEx {
 //		whileEx();
 //		whileGugu();
 //		whileInfinity();
-		doWhileEx();
-		forLoopEx();
-		continueEx();
-		breakEx();
+//		doWhileEx();
+//		forLoopEx();
+//		continueEx();
+//		breakEx();
+		randomEx();
 	}
 	
-    private static void breakEx(){
-    	//6, 14로 동시에 나눠지는 수, 어디까지 루프 돌려야?, while 적합
-    	int num = 1;
-    	
-    	while(true) {
-    		if (num % 6 ==0 && num % 14 == 0) break;
-    		num ++;
-    	}
-    	System.out.println("\n" + num);
-    }
-    
+	private static void randomEx() {
+		//	1 ~ 45까지의 난수 6개 출력
+		//	for문 버전
+		for (int i = 0; i < 6; i++) {
+			int randnum = (int)(Math.random() * 45) + 1;
+			System.out.print(randnum + " ");
+		}
+		System.out.println(); // 개행
+		
+		//	while문 버전
+		int i = 0;
+		
+		while(i < 6) {
+			System.out.print((int)(Math.random() * 45) + 1);
+			System.out.print(" ");
+			i++;
+		}
+		System.out.println();
+	}
+	
+	private static void breakEx() {
+		//	6과 14로 동시에 나누어 떨어지는 수 찾아보자
+		//	어디까지 루프를 돌여야 할 지 판단이 어려움
+		//	while 루프가 적합
+		int num = 1;
+		
+		while(true) {
+			if (num % 6 == 0 && num % 14 == 0) break;
+			System.out.print(".");
+			num ++;
+		}
+		System.out.println("\n" + num);
+	}
 	
 	private static void continueEx() {
-		// 1 ~ 20 중 2, 3의 배수 제외 나머지 출력
+		//	1 ~ 20 수 중 2의 배수, 3의 배수를 제외한 나머지를 출력
 		for (int i = 1; i <= 20; i++) {
-			if (i % 2 == 0 || i % 3 == 0) continue; // 2,3 배수면 뒤코드 실행 안, 다음 루
-			
+			if (i % 2 == 0 || i % 3 == 0) continue;	
+//			2의 배수, 3의 배수면 아래 코드는 수행되지 않고 다음번 루프를 수행
 			System.out.println(i);
 		}
-		
 	}
 	
-    private static void forLoopEx() {
-    	// 구구단 출력 for 문 버전 (while 문과 비교)
-    	Scanner scanner = new Scanner(System.in);
-    	
-    	System.out.print("단을 입력하세요:");
-    	int dan = scanner.nextInt();
-    	
-    	// 형식 : for(제어변수초기화; 반복조건체크; 증감식) 
-    	for (int num = 1; num <= 9; num++) {
-    		System.out.println(dan + "*" + num + "=" + (dan * num));
-    	}
-    	scanner.close();
-    }
+	private static void forLoopEx() {
+		//	구구표 출력 (for문 버전) -> whileGugu와 비교
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("단을 입력하세요:");
+		int dan = scanner.nextInt();
+		
+		//	for(제어변수초기화; 반복조건체크; 증감식)
+		for (int num = 1; num <= 9; num++) {
+			System.out.println(dan + "*" + num + "=" + (dan * num));
+		}
+		scanner.close();
+	}
 	
 	private static void doWhileEx() {
 		//	while 문의 반복 조건을 뒤에서 확인
