@@ -3,19 +3,22 @@ package com.javaex.basics;
 public class ForMultiplictionTable {
 	
 	public static void main(String[] args) {
+		printStars();
 		forLoopEx();
-		forLoopEx2();
 	}
-	
-	private static void forLoopEx2() {
-		for (int x=1; x<7; x++) {
+
+	private static void printStars() {
+		int i,j;
+		for (i=0; i<7; i++) {
 			System.out.println("\n");
-	
-		    for(int *=1; x<7; x++) {
-		    	System.out.println(x*x);
-		    }
+			
+			for (j=1; j<1+i; j++) {
+				System.out.print("*");
+			}
 		}
-}
+		
+	}
+
 
 	private static void forLoopEx() {
 		for (int i=2; i<10; i++) {
