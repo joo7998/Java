@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class LoopEx {
 
 	public static void main(String[] args) {
-//		whileEx();
+//  	whileEx();
 //		whileGugu();
 //		whileInfinity();
 //		doWhileEx();
-//		forLoopEx();
+		forLoopEx();
 //		continueEx();
 //		breakEx();
-		randomEx();
+//		randomEx();
 	}
 	
 	private static void randomEx() {
