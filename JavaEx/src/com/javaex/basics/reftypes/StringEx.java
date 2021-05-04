@@ -25,6 +25,11 @@ public class StringEx {
     // 부가 정보로 소숫점 자리수 지정
     System.out.printf("현재 이자율은 %.2f%%입니다%n", rate);
     
+    // String.format 메서드 이용 : 더 깔끔,  더 활
+    String fmt = "%d개의 %s중에서 %개를 먹었다%n";
+    String result = String.format(fmt, 5, "바나나", 2);
+    System.out.println(result);
+    
 }
 	
 
