@@ -4,18 +4,18 @@ public class ForMultiplictionTable {
 	
 	public static void main(String[] args) {
 		forLoopEx();
-//		forLoopEx2();
+		forLoopEx2();
 	}
 	
-//	private static void forLoopEx2() {
-//		for (int x=*; x<7; x++) {
-//			System.out.println("\n");
-//		}
-//		    for(int x=*; x<7; x++) {
-//		    	System.out.println(* +)
-//		    }
-//		
-//	}
+	private static void forLoopEx2() {
+		for (int x=1; x<7; x++) {
+			System.out.println("\n");
+	
+		    for(int *=1; x<7; x++) {
+		    	System.out.println(x*x);
+		    }
+		}
+}
 
 	private static void forLoopEx() {
 		for (int i=2; i<10; i++) {

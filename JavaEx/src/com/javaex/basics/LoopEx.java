@@ -10,9 +10,9 @@ public class LoopEx {
 //		whileInfinity();
 //		doWhileEx();
 //		forLoopEx();
-		continueEx();
+//		continueEx();
 //		breakEx();
-//		randomEx();
+		randomEx();
 	}
 	
 	private static void randomEx() {
