@@ -3,7 +3,7 @@ package com.javaex.basics.reftypes;
 public class EnumEx {
 
 	public static void main(String[] args) {
-//		enumBasic();
+		enumBasic();
 		enumEx();
 	}
 	

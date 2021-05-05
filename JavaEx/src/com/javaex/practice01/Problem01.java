@@ -10,15 +10,21 @@ public class Problem01 {
 //		variableInputEx();
 		byteType();
 		byteGarbage();
-		printStars();
-		forMultiplicationLoop();
+		printStars();	
 		problem01();
 //		problem02();
 		problem02debug();
+		problem031();
+		problem03();
+//		problem04();
+		problem05();
+		problem051();
 	}
+	
 	
 	private static void printLine() {
 		System.out.println(); // one line
+		System.out.println("");
 		System.out.print("\n"); // one line
 		System.out.print("This does not create line.");
 		System.out.println("\n"); // two lines ? 
@@ -63,23 +69,12 @@ public class Problem01 {
 	private static void printStars() {
 		int i,j;                     // variable value 선언 
 		for (i=0; i<4; i++) {
-			System.out.println();
+			System.out.println(); 
 			for (j=1; j<1+i; j++) {
 				System.out.print("*");
 			}
 		}
-		System.out.println(); 
-	}
-
-	private static void forMultiplicationLoop() {
-		for (int i=2; i<10; i++) {
-			System.out.println();
-			
-		    for (int m=1; m<10; m++) {
-				System.out.println(i + "*" + m + " = " + (i*m));
-			}
-		}
-		System.out.println();
+		System.out.println("\n"); 
 	}
 	
 	private static void problem01() {
@@ -111,6 +106,57 @@ public class Problem01 {
 		}
 	}
 	
+	private static void problem031() {
+		for (int i=2; i<10; i++) {			
+		    for (int m=1; m<10; m++) {
+				System.out.println(i + "*" + m + " = " + (i*m));
+			}
+		    System.out.println();
+		}
+	}
 	
+	private static void problem03() {
+		for(int x=2; x<10; x++) {
+			System.out.print("["+x+"단]\t\t"); 
+		}
+		System.out.println();
+		
+		for (int x=1; x<10; x++) {
+			for (int y=2; y<10; y++) {
+				System.out.printf("%d * %d = %d\t", y,x,y*x);
+			}
+			System.out.println();
+		}
+	}
+	private static void problem04() {
+		for (int x=1; x<10; x++) {
+			for (int y=2; y<10; y++) {
+			System.out.printf("%d\t", x);
+		    }
+	    }
+    }
+	
+	private static void problem05() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("숫자를 입력하세요\n");
+		System.out.print("숫자: ");  		int a = scanner.nextInt();	
+		System.out.print("숫자: ");		int b = scanner.nextInt();	
+		System.out.print("숫자: ");		int c = scanner.nextInt();	
+		int max = a;
+		if (b > max) max = b;
+		if (c > max) max = c;
+	    System.out.print("최대값은 " + max + " 입니다.");
+	    
+	    }	
+	
+	// Math.math 사용하기 
+	private static void problem051() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("숫자를 입력하세요\n");
+		System.out.print("숫자: ");  		int a = scanner.nextInt();	
+		System.out.print("숫자: ");		int b = scanner.nextInt();		
+		int max = a;
+        System.out.println(Math.max(a, b));
+        }
 	
 }
