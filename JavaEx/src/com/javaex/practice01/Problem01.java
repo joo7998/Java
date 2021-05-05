@@ -19,9 +19,12 @@ public class Problem01 {
 //		problem04();
 		problem05();
 		problem051();
+	    problem06();
 	}
 	
 	
+	
+
 	private static void printLine() {
 		System.out.println(); // one line
 		System.out.println("");
@@ -146,7 +149,6 @@ public class Problem01 {
 		if (b > max) max = b;
 		if (c > max) max = c;
 	    System.out.print("최대값은 " + max + " 입니다.");
-	    
 	    }	
 	
 	// Math.math 사용하기 
@@ -159,4 +161,14 @@ public class Problem01 {
         System.out.println(Math.max(a, b));
         }
 	
+	private static void problem06() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("숫자를 입력하세요\n");
+		int a = scanner.nextInt();
+		if ( a % 2 == 0) {
+			sum = a 
+		}
+		else 
+	}
+
 }
