@@ -5,14 +5,39 @@ import java.util.Scanner;
 public class Problem01 {
 	
 	public static void main(String[] args) {
+		variableEx();
+//		variableInputEx();
 		printStars();
 		forMultiplicationLoop();
 		problem01();
 		problem02();
 	}
+
+	private static void variableEx() {
+		int value = 5;
+		int result = value + 3;
+		System.out.println(result);
+	}
 		
+	private static void variableInputEx() {		
+		Scanner scanner = new Scanner(System.in);		
+		System.out.print("Enter a number smaller than 5:");
+		int v1 = scanner.nextInt();	
+
+		if (v1 < 5) {
+			int v2 = v1 + 2;
+		    int v3 = v1 + v2 + 3;
+		    System.out.print(v3);
+		}
+		else {
+			System.out.print("value >= 5");
+		}
+		
+		
+	}
+
 	private static void printStars() {
-		int i,j;
+		int i,j;                     // variable value 선언 
 		for (i=0; i<7; i++) {
 			System.out.println();
 			
@@ -24,7 +49,7 @@ public class Problem01 {
 
 	private static void forMultiplicationLoop() {
 		for (int i=2; i<10; i++) {
-			System.out.println();
+			System.out.println("\n");
 		
 		    for (int m=1; m<10; m++) {
 				System.out.println(i + "*" + m + " = " + (i*m));
