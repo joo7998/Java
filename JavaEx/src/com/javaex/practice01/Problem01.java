@@ -166,9 +166,8 @@ public class Problem01 {
 		System.out.print("숫자를 입력하세요\n");
 		int a = scanner.nextInt();
 		if ( a % 2 == 0) {
-			sum = a 
+//			sum = 
 		}
-		else 
 	}
 
 }
