@@ -3,11 +3,39 @@ package com.javaex.api.stringclass;
 public class StringEx {
 
 	public static void main(String[] args) {
-		stringBasic();
-		usefulMethods();
+//		stringBasic();
+//		usefulMethods();
+		stringBufferEx();
 
 	}
+	// 문자열 객체 : 연결,  method 수행시 매번 새 String 반환
+	// StringBuffer : buffer 기반 작동 (메모리 효율에 더 좋다) 
+	private static void stringBufferEx() {
+		StringBuffer sb = new StringBuffer("This");
+		
+		// 추가 
+		sb.append(" is pencil");
+		// 삽입 
+		sb.insert(8, "my");
+		
+		sb.replace(8, 10, "your ");
 	
+		System.out.println(sb);
+		
+		// buffer size 변경 (나머지 없어짐)
+		sb.setLength(10);
+		System.out.println(sb);
+		
+		//StringBuffer의 method들 연속 호출 : method chaining
+		StringBuffer sb2 = new StringBuffer("This")
+				.append(" is pencil")
+				.insert(8,  "my")
+				.replace(8, 10, "your ");
+		String s = sb2.toString();  
+		System.out.println("결과: " + s);
+		
+	}
+
 	private static void stringBasic() {
 		String s1 = "Java"; // 리터럴
 		String s2 = new String("Java"); // new 
