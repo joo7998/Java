@@ -6,10 +6,10 @@ import java.util.Collections;
 public class ArraysClassEx {
 
 	public static void main(String[] args) {
-//		printArrayEx();
-//		copyArrayEx();
-//		sortEx();
-//		sortCustomEx();
+		printArrayEx();
+		copyArrayEx();
+		sortEx();
+		sortCustomEx();
 		searchEx();
 	}
 	

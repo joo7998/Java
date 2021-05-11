@@ -1,5 +1,6 @@
 package com.javaex.api.collection.list;
 
+import java.util.Enumeration;
 import java.util.Vector;
 
 public class VectorEx {
@@ -43,6 +44,12 @@ public class VectorEx {
 		}
 		System.out.println();
 		// TODO : Loop 개선 
+		
+		Enumeration e = v.elements(); 		// 각 요소에 접근하는 접근자를 
+		while(e.hasMoreElements()) {  		// 뒤에 요소 더 있나? 
+			System.out.print(e.nextElement() + " ");
+		}
+		System.out.println();
 		
 		// Buffer 비우기 
 		v.clear();
