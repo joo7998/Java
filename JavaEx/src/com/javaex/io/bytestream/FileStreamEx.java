@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class FileStreamEx {
-	static String rootPath = System.getProperty("user.dir") + "\\files\\";
+	static String rootPath = System.getProperty("user.dir") + "\files\\";
 	static String source = rootPath + "img.jpg";
 	static String target = rootPath + "img_copy.jpg";
 	public static void main(String[] args) {
