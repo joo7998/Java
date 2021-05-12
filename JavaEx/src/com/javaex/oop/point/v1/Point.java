@@ -1,6 +1,7 @@
 package com.javaex.oop.point.v1;
 
 // v1 필드 은닉, getter/setter, 내장 method
+
 public class Point {
 	//	필드
 	private int x;

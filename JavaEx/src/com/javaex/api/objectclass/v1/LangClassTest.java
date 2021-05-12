@@ -15,6 +15,10 @@ public class LangClassTest {
 		
 		// 객체 p의 부모 클래스 정보 확인
 		System.out.println("Point의 부모: " + p.getClass().getSuperclass().getName());
+	
+		
+
+	
 	}
 
 }

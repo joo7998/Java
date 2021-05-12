@@ -13,6 +13,9 @@ public class Types {
 		explicitCasting();
 	}
 	
+
+
+	
 	//	명시적 형변환
 	//	표현의 범위 넓을 자료형 -> 좁은 자료형으로 변환
 	//	자료의 유실 가능, 개발자가 명시적으로 변환
@@ -28,6 +31,10 @@ public class Types {
 		
 		i = (int)f;
 		System.out.println("float " + f + " -> int " + i);
+		
+		int num = 120;
+		int result = num >= 100 ? num - 10 : num + 10;
+		System.out.println(result);
 		
 	}
 	//	암묵적 형변환

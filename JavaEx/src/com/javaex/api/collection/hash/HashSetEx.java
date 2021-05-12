@@ -6,8 +6,8 @@ import java.util.Iterator;
 public class HashSetEx {
 
 	public static void main(String[] args) {
-//		hashSetBasic();
-		hashSetCustom();
+		hashSetBasic();
+//		hashSetCustom();
 
 	}
 
@@ -60,6 +60,25 @@ public class HashSetEx {
 		//	객체의 삭제
 		hs.remove("C++");
 		System.out.println(hs);
+		
+		System.out.println("Exception 테스트 시작");
+
+		try {
+		    String test = null;
+		    System.out.println("문자열 길이 = " + test.length());
+		}
+		catch(NullPointerException ne) {
+		    System.out.println("NullPointException");
+		}
+		catch(Exception e) {
+		    System.out.println("Exception");
+		}
+		finally {
+		    System.out.println("finally");
+		}
+		System.out.println("Exception 테스트 종료");
+
+
 	}
 
 }
