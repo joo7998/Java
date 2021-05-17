@@ -1,4 +1,4 @@
-package com.javeex.oop.shape.v1;
+package com.javaex.oop.shape.v1;
 
 public class ShapeApp {
 

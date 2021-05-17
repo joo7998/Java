@@ -1,4 +1,4 @@
-package com.javeex.oop.shape.v1;
+package com.javaex.oop.shape.v2;
 
 // 추상 클래스
 // 		스스로 객체화 불가
@@ -18,6 +18,7 @@ public abstract class Shape {
 	
 	//	메서드는 추상 메서드 or 일반 메서드를 가질 수 있다
 	//	추상 메서드가 한 개 이상 있어야
-	public abstract void draw();	//	선언만 한다 -> 구현은 실체 클래스에서
+//	public abstract void draw();	//	선언만 한다 -> 구현은 실체 클래스에서  
+	// Drawable interface 에서 위
 	public abstract double area();	
 }

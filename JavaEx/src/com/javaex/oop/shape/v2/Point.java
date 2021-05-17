@@ -1,4 +1,4 @@
-package com.javeex.oop.shape.v2;
+package com.javaex.oop.shape.v2;
 
 // interface 구현 : implements
 public class Point implements Drawable {

@@ -1,6 +1,6 @@
-package com.javeex.oop.shape.v2;
+package com.javaex.oop.shape.v1;
 
-public class Circle extends Shape implements Drawable {
+public class Circle extends Shape {
 	//	필드
 	protected double radius;	//	반지름
 	

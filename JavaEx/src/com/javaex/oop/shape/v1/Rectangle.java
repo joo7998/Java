@@ -1,4 +1,4 @@
-package com.javeex.oop.shape.v1;
+package com.javaex.oop.shape.v1;
 
 // 	추상 클래스 상속시 부모 클래스의 추상 메소드 반드시 구현해야  
 public class Rectangle extends Shape {
