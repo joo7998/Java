@@ -14,7 +14,7 @@ public class DBConfig {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			conn = DriverManager.getConnection(DBURL, DBUSER, DBPASS);
 		} catch (ClassNotFoundException e) {
-			System.err.println("드라이버 로드 실패!");
+			System.err.println("Fail to load driver!");
 		}
 		
 		return conn;

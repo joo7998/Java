@@ -17,9 +17,9 @@ public class ConnectionTest {
 												dbuser,
 												dbpass);
 			System.out.println(conn);
-			System.out.println("연결 성공!");
+			System.out.println("Connected!");
 		} catch (ClassNotFoundException e) {
-			System.err.println("드라이버 로드 실패!");
+			System.err.println("Fail to load driver!");
 		} catch (SQLException e) {
 			System.err.println("SQLError!");
 		} finally {
