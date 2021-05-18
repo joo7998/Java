@@ -3,7 +3,7 @@ package com.javaex.jdbc.oracle;
 import java.sql.*;
 
 public class DBConfig {
-	public static String DBURL = "jdbc:oracle:thin:@localhost:1521:orcl";
+	public static String DBURL = "jdbc:oracle:thin:@localhost:1521/orcl";
 	public static String DBUSER = "hr";
 	public static String DBPASS = "hr";
 	

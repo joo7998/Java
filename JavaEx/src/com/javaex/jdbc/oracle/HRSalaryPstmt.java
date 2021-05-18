@@ -17,9 +17,9 @@ public class HRSalaryPstmt {
 		ResultSet rs = null;
 		
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("최소급여:");
+		System.out.print("MIN salary:");
 		int minSalary = scanner.nextInt();
-		System.out.print("최대급여:");
+		System.out.print("MAX salary:");
 		int maxSalary = scanner.nextInt();
 		
 		if (minSalary > maxSalary) {
