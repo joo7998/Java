@@ -15,6 +15,8 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
+import com.mongodb.client.result.DeleteResult;
+import com.mongodb.client.result.UpdateResult;
 
 public class MongodbTest {
 	static String MONGODB_IP = "127.0.0.1";	//	localhost
@@ -26,12 +28,69 @@ public class MongodbTest {
 //		connect();
 //		getCollection(DB_NAME, COLL_NAME);
 //		testInsert();
-		testInsertMany();
+//		testInsertMany();
 //		testFindFirst();
 //		testFindAll();
-		testFindFilter();
+//		testFindFilter();
+//		testDelete();
+//		testUpdateOne();
+		testUpdateMany();
+		
+		
 	}
 	
+	private static void testUpdateMany() {
+		// gender == FEMALE -> documents that satisfy
+		// METHOD = "updateMany"
+		MongoCollection<Document> coll = getCollection(DB_NAME, COLL_NAME);
+		// filter 
+		Bson filter = Filters.eq("gender", "FEMALE");
+		// when updating : { "$set" : {document} } 
+		Bson doc = new Document("$set", new Document("method", "updateMany"));
+		UpdateResult result = coll.updateMany(filter, doc);
+		// found result <--> actual update 
+		System.out.println(result.getMatchedCount() + " records found");
+		// update result 
+		System.out.println(result.getModifiedCount() + " record(s) updated");
+		
+	}
+
+	private static void testUpdateOne() {
+		// species == human UPDATE 
+		// 	METHOD field updateone
+		//	db.testCollection.update({condition}, { "$set" : {document} } ) 
+		
+		MongoCollection<Document> coll = getCollection(DB_NAME, COLL_NAME);
+		// filter 
+		Bson filter = Filters.eq("species", "인간");
+		// REMINDER : when updating : { "$set" : {document} } 
+		Bson doc = new Document("$set", new Document("method", "updateOne"));
+		UpdateResult result = coll.updateOne(filter, doc);
+		System.out.println(result.getModifiedCount() + " record(s) updated");
+		
+	}
+
+	
+	
+	
+	private static void testDelete() {
+		// db.testCollection.delete({condition})
+		// db.testCollection.delete({}) : entire delete
+				// gender == MAEL : delete 
+		MongoCollection<Document> coll = getCollection(DB_NAME, COLL_NAME);
+
+		// Filter conditional delete
+//		Bson filter = Filters.eq("gender", "MALE");
+//		DeleteResult result = coll.deleteMany(filter);
+		
+		// entire delete
+		DeleteResult result = coll.deleteMany(new Document());
+		
+		System.out.println("delete result: " + result);
+		System.out.println(result.getDeletedCount() + "records deleted");
+		
+	}
+
 	//	조건에 만족하는 문서 가져오기
 	private static void testFindFilter() {
 		//	species가 인간이고 gender가 FEMALE인 문서 - $and

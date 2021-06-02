@@ -11,8 +11,8 @@ public class AuthorApp {
 //		insertAuthor();
 //		updateAuthor();
 //		deleteAuthor();
-//		searchAuthor();
-		getAuthorInfo();
+		searchAuthor();
+//		getAuthorInfo();
 	}
 
 	private static void getAuthorInfo() {
